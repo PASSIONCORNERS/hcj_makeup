@@ -349,13 +349,144 @@ template {
   display: none;
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+} */
+
+body,
+html {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Neuton', serif; */
+  height: 100%;
+  font-size: 16px;
+  color: #666;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  /* font-family: 'Neuton', serif; */
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  scroll-padding-top: 150px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #fff;
+  font-family: "Neuton", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav_links li {
+    list-style: none;
+  }
+
+.nav_links a {
+    text-decoration: none;
+    color: #000;
+  }
+
+/* .main_nav {
+  display: flex;
+  height: 10vh;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 2;
+}
+.nav_links {
+  display: flex;
+
+  & ul {
+    display: flex;
+  }
+  & li {
+    display: flex;
+    align-items: center;
+  }
+  & a {
+    text-decoration: none;
+    color: #666;
+    margin-right: 50px;
+  }
+} */
+
+.hero_bg {
+  background-image: url("../img/bg1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* .pimg1, */
+
+.pimg2,
+.pimg3 {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+/* .pimg1 {
+  background-image: url("../img/bg1.jpg");
+  min-height: 100%;
+} */
+
+.pimg2 {
+  background-image: url("../img/bg2.jpg");
+  min-height: 70%;
+}
+
+.pimg3 {
+  background-image: url("../img/bg3.jpg");
+  min-height: 100%;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+  scroll-snap-align: start;
+}
+
+.section-light {
+  background-color: transparent;
+  color: #666;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  /* text-align: center; */
+  /* width: 100%; */
+  transform: translateY(50%);
+  height: 50vh;
+}
+
+.section-light2 {
+  background-color: #f4f4f4;
+  color: #666;
+  height: 50vh;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
 }
