@@ -1,27 +1,20 @@
 let gulp = require("gulp");
-let postcss = require("gulp-postcss");
+let sass = require("gulp-sass");
+let autoprefixer = require("gulp-autoprefixer");
 let browserSync = require("browser-sync").create();
-let autoprefixer = require("autoprefixer");
-let cssvars = require("postcss-simple-vars");
-let cssnested = require("postcss-nested");
-let cssimport = require("postcss-import");
-let cssmixins = require("postcss-mixins");
 
+//compile scss to css
 function style() {
-  //1. Where is my css file
+  //1. where is the sass file
   return (
     gulp
-      .src("./app/css/main.css")
-      //2. Passing it through postCSS
-      .pipe(postcss([cssimport, cssmixins, cssvars, cssnested, autoprefixer]))
-      // error log on your css
-      .on("error", function(errorInfo) {
-        console.log(errorInfo.toString());
-        this.emit("end");
-      })
-      //3. Where do I save the compliled file
-      .pipe(gulp.dest("./app/temp"))
-      //4. Stream changes to all browser
+      .src("./app/scss/**/*.scss")
+      //2. pass through sass compiler
+      .pipe(sass().on("error", sass.logError))
+      .pipe(autoprefixer())
+      //3. where to save the complied css
+      .pipe(gulp.dest("./app/css"))
+      //4. stream changes to all browsers
       .pipe(browserSync.stream())
   );
 }
@@ -32,11 +25,8 @@ function watch() {
       baseDir: "./app"
     }
   });
-  //watch all css then compile it through postcss -style
-  gulp.watch("./app/css/**/*.css", style);
-  //watch all html
-  gulp.watch("./app/*.html").on("change", browserSync.reload);
-  //watch all js files
+  gulp.watch("./app/scss/**/*.scss", style);
+  gulp.watch("./app/**/*.html").on("change", browserSync.reload);
   gulp.watch("./app/js/**/*.js").on("change", browserSync.reload);
 }
 

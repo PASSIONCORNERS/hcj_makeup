@@ -1,3 +1,71 @@
-@import "normalize.css";
-@import "./module/_global.css";
-@import "./module/_parallax.css";
+/*----TO USE-----
+Media Query Mixins
+
+@include atiphone6 {
+  
+}
+
+@include at576 {
+
+}
+@include at768 {
+
+}
+@include at992 {
+
+}
+@include at1200 {
+
+}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  display: flex;
+  background: #fff;
+  height: 8vh;
+  width: 100%; }
+
+.nav-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+nav {
+  display: flex; }
+  nav ul {
+    display: flex;
+    list-style: none; }
+  nav li {
+    margin: 0 0 0 1.5em; }
+  nav a {
+    color: #000;
+    font-family: "Neuton", serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-decoration: none;
+    transition: 0.2s ease-in; }
+  nav a:hover,
+  nav a:focus {
+    color: darkgray;
+    transition: 0.2s ease-in; }
+
+.hero {
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  position: relative; }
+  .hero .hero-logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-50%); }

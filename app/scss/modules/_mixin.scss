@@ -1,0 +1,45 @@
+@mixin atiphone6 {
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin at576 {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+@mixin at768 {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin at992 {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+@mixin at1200 {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+/*----TO USE-----
+Media Query Mixins
+
+@include atiphone6 {
+  
+}
+
+@include at576 {
+
+}
+@include at768 {
+
+}
+@include at992 {
+
+}
+@include at1200 {
+
+}
+*/
