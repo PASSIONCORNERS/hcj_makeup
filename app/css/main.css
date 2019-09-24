@@ -26,7 +26,7 @@ Media Query Mixins
 header {
   display: flex;
   background: #fff;
-  height: 8vh;
+  height: 100vh;
   width: 100%; }
 
 .nav-container {
@@ -40,10 +40,12 @@ header {
 nav {
   display: flex; }
   nav ul {
+    text-align: center;
     display: flex;
+    flex-direction: column;
     list-style: none; }
   nav li {
-    margin: 0 0 0 1.5em; }
+    margin: 2em 0 0 1.5em; }
   nav a {
     color: #000;
     font-family: "Neuton", serif;
@@ -55,6 +57,30 @@ nav {
   nav a:focus {
     color: darkgray;
     transition: 0.2s ease-in; }
+
+@media (min-width: 768px) {
+  header {
+    height: 8vh; }
+  nav ul {
+    flex-direction: row; }
+  nav li {
+    margin: 0 0 0 1.5em; } }
+
+@media (min-width: 992px) {
+  header {
+    height: 8vh; }
+  nav ul {
+    flex-direction: row; }
+  nav li {
+    margin: 0 0 0 1.5em; } }
+
+@media (min-width: 1200px) {
+  header {
+    height: 8vh; }
+  nav ul {
+    flex-direction: row; }
+  nav li {
+    margin: 0 0 0 1.5em; } }
 
 .hero {
   background-image: url("../img/hero.jpg");

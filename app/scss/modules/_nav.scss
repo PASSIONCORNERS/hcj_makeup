@@ -1,7 +1,7 @@
 header {
   display: flex;
   background: #fff;
-  height: 8vh;
+  height: 100vh;
   width: 100%;
   //   position: fixed;
   //   z-index: 99;
@@ -19,12 +19,13 @@ nav {
   //   background: lightblue;
 
   ul {
+    text-align: center;
     display: flex;
-    // background: yellow;
+    flex-direction: column;
     list-style: none;
   }
   li {
-    margin: 0 0 0 1.5em;
+    margin: 2em 0 0 1.5em;
   }
   a {
     color: #000;
@@ -38,5 +39,51 @@ nav {
   a:focus {
     color: darkgray;
     transition: 0.2s ease-in;
+  }
+}
+// Media Query Mixins
+
+@include atiphone6 {
+}
+
+@include at576 {
+}
+@include at768 {
+  header {
+    height: 8vh;
+  }
+  nav {
+    ul {
+      flex-direction: row;
+    }
+    li {
+      margin: 0 0 0 1.5em;
+    }
+  }
+}
+@include at992 {
+  header {
+    height: 8vh;
+  }
+  nav {
+    ul {
+      flex-direction: row;
+    }
+    li {
+      margin: 0 0 0 1.5em;
+    }
+  }
+}
+@include at1200 {
+  header {
+    height: 8vh;
+  }
+  nav {
+    ul {
+      flex-direction: row;
+    }
+    li {
+      margin: 0 0 0 1.5em;
+    }
   }
 }
