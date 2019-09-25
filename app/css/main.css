@@ -181,7 +181,7 @@ nav {
     background-image: url("../img/hero.jpg");
     background-position: middle center;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
     position: relative; }
     .hero .hero-logo {
       position: absolute;
@@ -220,3 +220,27 @@ nav {
       text-align: center;
       width: 100%;
       transform: translate(0, -50%) scale(1); } }
+
+.services-bg {
+  background-image: url("../img/services-bg.jpg");
+  height: 100vh;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.services-content {
+  scroll-snap-align: start; }
+  .services-content h1 {
+    padding-top: 6em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.services-block img {
+  width: 100px;
+  height: 100px; }

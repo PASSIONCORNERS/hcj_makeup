@@ -1,0 +1,27 @@
+.services-bg {
+  background-image: url("../img/services-bg.jpg");
+  height: 100vh;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.services-content {
+  scroll-snap-align: start;
+  h1 {
+    padding-top: 6em;
+    text-align: center;
+    font-family: $fontM;
+    font-size: 2.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+.services-block {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
