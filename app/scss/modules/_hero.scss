@@ -1,6 +1,6 @@
 .hero {
   background-image: url("../img/hero.jpg");
-  background-position: center;
+  background-position: left center;
   background-repeat: no-repeat;
   height: 90vh;
   position: relative;
@@ -10,10 +10,80 @@
     left: 0;
     text-align: center;
     width: 100%;
-    transform: translateY(-50%);
+    transform: translate(15px, -50%) scale(0.7);
     // img {
     //   padding: 0;
     //   margin: 0;
     // }
+  }
+}
+// Media Query Mixins
+
+@include atiphone6 {
+}
+
+@include at576 {
+}
+@include at768 {
+  .hero {
+    background-image: url("../img/hero.jpg");
+    background-position: middle center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    .hero-logo {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      transform: translate(0, -50%) scale(1);
+      // img {
+      //   padding: 0;
+      //   margin: 0;
+      // }
+    }
+  }
+}
+@include at992 {
+  .hero {
+    background-image: url("../img/hero.jpg");
+    background-position: middle center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    .hero-logo {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      transform: translate(0, -50%) scale(1);
+      // img {
+      //   padding: 0;
+      //   margin: 0;
+      // }
+    }
+  }
+}
+@include at1200 {
+  .hero {
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    .hero-logo {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      transform: translate(0, -50%) scale(1);
+      // img {
+      //   padding: 0;
+      //   margin: 0;
+      // }
+    }
   }
 }

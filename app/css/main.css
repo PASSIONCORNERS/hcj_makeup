@@ -164,7 +164,7 @@ nav {
 
 .hero {
   background-image: url("../img/hero.jpg");
-  background-position: center;
+  background-position: left center;
   background-repeat: no-repeat;
   height: 90vh;
   position: relative; }
@@ -174,4 +174,49 @@ nav {
     left: 0;
     text-align: center;
     width: 100%;
-    transform: translateY(-50%); }
+    transform: translate(15px, -50%) scale(0.7); }
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: url("../img/hero.jpg");
+    background-position: middle center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative; }
+    .hero .hero-logo {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      transform: translate(0, -50%) scale(1); } }
+
+@media (min-width: 992px) {
+  .hero {
+    background-image: url("../img/hero.jpg");
+    background-position: middle center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative; }
+    .hero .hero-logo {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      transform: translate(0, -50%) scale(1); } }
+
+@media (min-width: 1200px) {
+  .hero {
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative; }
+    .hero .hero-logo {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      transform: translate(0, -50%) scale(1); } }
