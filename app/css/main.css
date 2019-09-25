@@ -251,7 +251,8 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 20em; }
 
 .services-block {
   margin-top: 7em;
@@ -320,3 +321,417 @@ nav {
     flex-direction: row; }
   .services-block {
     width: 28%; } }
+
+.portfolio {
+  background-color: #f8f8f8;
+  text-align: center; }
+  .portfolio h1 {
+    padding-top: 4em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .portfolio p {
+    margin: 0.6em 0 3em 0;
+    font-family: "Neuton", serif;
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    color: #535353; }
+  .portfolio p:last-child {
+    margin-top: 4em;
+    padding-bottom: 5em;
+    cursor: pointer; }
+
+.portfolio-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  height: auto; }
+  .portfolio-container img {
+    width: 100%;
+    height: 100%;
+    display: block; }
+  .portfolio-container .portfolio-gallery1 {
+    position: relative;
+    cursor: pointer; }
+  .portfolio-container .portfolio-gallery1::before {
+    content: "Jessica";
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    transform: rotate(0);
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery1:hover::before {
+    content: "Jessica";
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    transform: rotate(-5deg);
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery1::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(0);
+    opacity: 0;
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery1:hover::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(5deg);
+    opacity: 1;
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery2 {
+    position: relative;
+    cursor: pointer; }
+  .portfolio-container .portfolio-gallery2::before {
+    content: "Cristina";
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    transform: rotate(0);
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery2:hover::before {
+    content: "Cristina";
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    transform: rotate(-5deg);
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery2::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(0);
+    opacity: 0;
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery2:hover::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(5deg);
+    opacity: 1;
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery3 {
+    position: relative;
+    cursor: pointer; }
+  .portfolio-container .portfolio-gallery3::before {
+    content: "Sandra";
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    transform: rotate(0);
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery3:hover::before {
+    content: "Sandra";
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    transform: rotate(-5deg);
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery3::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(0);
+    opacity: 0;
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery3:hover::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(5deg);
+    opacity: 1;
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery4 {
+    position: relative;
+    cursor: pointer; }
+  .portfolio-container .portfolio-gallery4::before {
+    content: "Violet";
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    transform: rotate(0);
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery4:hover::before {
+    content: "Violet";
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    transform: rotate(-5deg);
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery4::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(0);
+    opacity: 0;
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery4:hover::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(5deg);
+    opacity: 1;
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery5 {
+    position: relative;
+    cursor: pointer; }
+  .portfolio-container .portfolio-gallery5::before {
+    content: "Emma";
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    transform: rotate(0);
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery5:hover::before {
+    content: "Emma";
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    transform: rotate(-5deg);
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery5::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(0);
+    opacity: 0;
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery5:hover::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(5deg);
+    opacity: 1;
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery6 {
+    position: relative;
+    cursor: pointer; }
+  .portfolio-container .portfolio-gallery6::before {
+    content: "Claire";
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    transform: rotate(0);
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery6:hover::before {
+    content: "Claire";
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    transform: rotate(-5deg);
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery6::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(0);
+    opacity: 0;
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+  .portfolio-container .portfolio-gallery6:hover::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(5deg);
+    opacity: 1;
+    z-index: 6;
+    transition: all 0.3s ease-out; }
+
+@media (min-width: 768px) {
+  .portfolio-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto; }
+    .portfolio-container img {
+      width: 100%;
+      height: 100%;
+      display: block; }
+    .portfolio-container .portfolio-gallery1 {
+      grid-column: 1/5; }
+    .portfolio-container .portfolio-gallery2 {
+      grid-column: 5/9; }
+    .portfolio-container .portfolio-gallery3 {
+      grid-column: 9/13; }
+    .portfolio-container .portfolio-gallery4 {
+      grid-column: 1/5; }
+    .portfolio-container .portfolio-gallery5 {
+      grid-column: 5/9; }
+    .portfolio-container .portfolio-gallery6 {
+      grid-column: 9/13; } }
+
+@media (min-width: 992px) {
+  .portfolio-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto; }
+    .portfolio-container img {
+      width: 100%;
+      height: 100%;
+      display: block; }
+    .portfolio-container .portfolio-gallery1 {
+      grid-column: 1/5; }
+    .portfolio-container .portfolio-gallery2 {
+      grid-column: 5/9; }
+    .portfolio-container .portfolio-gallery3 {
+      grid-column: 9/13; }
+    .portfolio-container .portfolio-gallery4 {
+      grid-column: 1/5; }
+    .portfolio-container .portfolio-gallery5 {
+      grid-column: 5/9; }
+    .portfolio-container .portfolio-gallery6 {
+      grid-column: 9/13; } }
+
+@media (min-width: 1200px) {
+  .portfolio-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto; }
+    .portfolio-container img {
+      width: 100%;
+      height: 100%;
+      display: block; }
+    .portfolio-container .portfolio-gallery1 {
+      grid-column: 1/5; }
+    .portfolio-container .portfolio-gallery2 {
+      grid-column: 5/9; }
+    .portfolio-container .portfolio-gallery3 {
+      grid-column: 9/13; }
+    .portfolio-container .portfolio-gallery4 {
+      grid-column: 1/5; }
+    .portfolio-container .portfolio-gallery5 {
+      grid-column: 5/9; }
+    .portfolio-container .portfolio-gallery6 {
+      grid-column: 9/13; } }
