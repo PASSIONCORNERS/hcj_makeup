@@ -1,6 +1,6 @@
 .services-bg {
   background-image: url("../img/services-bg.jpg");
-  height: 100vh;
+  height: auto;
   position: relative;
   background-position: center center;
   background-size: cover;
@@ -10,7 +10,7 @@
 .services-content {
   scroll-snap-align: start;
   h1 {
-    padding-top: 6em;
+    padding-top: 8em;
     text-align: center;
     font-family: $fontM;
     font-size: 2.2rem;
@@ -19,9 +19,99 @@
     letter-spacing: 2px;
   }
 }
+.services-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 .services-block {
-  img {
-    width: 100px;
-    height: 100px;
+  margin-top: 7em;
+  width: 90%;
+  text-align: center;
+  &-img {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    img {
+      width: 90px;
+      height: 90px;
+      z-index: 2;
+    }
+  }
+  &-img::before {
+    content: "";
+    position: absolute;
+    background: #333;
+    border-radius: 50%;
+    top: 0;
+    width: 180px;
+    height: 180px;
+    z-index: 1;
+    transform: translateY(-25%) scale(1);
+    transition: transform 0.3s ease-out;
+  }
+  &-img:hover::before {
+    content: "";
+    position: absolute;
+    background: #333;
+    border-radius: 50%;
+    top: 0;
+    width: 180px;
+    height: 180px;
+    z-index: 1;
+    transform: translateY(-25%) scale(1.2);
+    transition: transform 0.3s ease-out;
+  }
+  h3 {
+    margin-top: 6em;
+    font-family: $fontM;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  p {
+    margin-top: 1.5em;
+    font-family: $fontN;
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    color: #535353;
+  }
+}
+// Media Query Mixins
+
+@include atiphone6 {
+}
+
+@include at576 {
+}
+@include at768 {
+  .services-container {
+    flex-direction: row;
+  }
+  .services-block {
+    width: 28%;
+  }
+}
+@include at992 {
+  .services-container {
+    flex-direction: row;
+  }
+  .services-block {
+    width: 28%;
+  }
+}
+@include at1200 {
+  .services-container {
+    flex-direction: row;
+  }
+  .services-block {
+    width: 28%;
   }
 }

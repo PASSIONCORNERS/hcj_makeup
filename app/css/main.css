@@ -223,7 +223,7 @@ nav {
 
 .services-bg {
   background-image: url("../img/services-bg.jpg");
-  height: 100vh;
+  height: auto;
   position: relative;
   background-position: center center;
   background-size: cover;
@@ -233,7 +233,7 @@ nav {
 .services-content {
   scroll-snap-align: start; }
   .services-content h1 {
-    padding-top: 6em;
+    padding-top: 8em;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-size: 2.2rem;
@@ -241,6 +241,79 @@ nav {
     text-transform: uppercase;
     letter-spacing: 2px; }
 
-.services-block img {
-  width: 100px;
-  height: 100px; }
+.services-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.services-block {
+  margin-top: 7em;
+  width: 90%;
+  text-align: center; }
+  .services-block-img {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: relative; }
+    .services-block-img img {
+      width: 90px;
+      height: 90px;
+      z-index: 2; }
+  .services-block-img::before {
+    content: "";
+    position: absolute;
+    background: #333;
+    border-radius: 50%;
+    top: 0;
+    width: 180px;
+    height: 180px;
+    z-index: 1;
+    transform: translateY(-25%) scale(1);
+    transition: transform 0.3s ease-out; }
+  .services-block-img:hover::before {
+    content: "";
+    position: absolute;
+    background: #333;
+    border-radius: 50%;
+    top: 0;
+    width: 180px;
+    height: 180px;
+    z-index: 1;
+    transform: translateY(-25%) scale(1.2);
+    transition: transform 0.3s ease-out; }
+  .services-block h3 {
+    margin-top: 6em;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 2px; }
+  .services-block p {
+    margin-top: 1.5em;
+    font-family: "Neuton", serif;
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    color: #535353; }
+
+@media (min-width: 768px) {
+  .services-container {
+    flex-direction: row; }
+  .services-block {
+    width: 28%; } }
+
+@media (min-width: 992px) {
+  .services-container {
+    flex-direction: row; }
+  .services-block {
+    width: 28%; } }
+
+@media (min-width: 1200px) {
+  .services-container {
+    flex-direction: row; }
+  .services-block {
+    width: 28%; } }
