@@ -1164,3 +1164,78 @@ nav {
         width: 45%; }
       .contact-content .contact-form textarea {
         width: 95%; } }
+
+footer {
+  background-color: #f8f8f8;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.footer-social {
+  margin-bottom: 3em; }
+  .footer-social i {
+    margin: 0 1em;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer; }
+  .footer-social .footer-social1 {
+    position: relative;
+    z-index: 9; }
+  .footer-social .footer-social1::after {
+    content: "";
+    position: absolute;
+    background: #000;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    z-index: -1;
+    transform: translate(-34%, -25%);
+    transition: 0.3s ease-out; }
+  .footer-social .footer-social1:hover::after {
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.3s ease-out; }
+  .footer-social .footer-social2 {
+    position: relative;
+    z-index: 9; }
+  .footer-social .footer-social2::after {
+    content: "";
+    position: absolute;
+    background: #000;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    z-index: -1;
+    transform: translate(-29%, -25%);
+    transition: 0.3s ease-out; }
+  .footer-social .footer-social2:hover::after {
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.3s ease-out; }
+  .footer-social .footer-social3 {
+    position: relative;
+    z-index: 9; }
+  .footer-social .footer-social3::after {
+    content: "";
+    position: absolute;
+    background: #000;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    z-index: -1;
+    transform: translate(-29%, -25%);
+    transition: 0.3s ease-out; }
+  .footer-social .footer-social3:hover::after {
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.3s ease-out; }
+
+.footer-cred {
+  font-family: "Neuton", serif;
+  font-style: italic;
+  letter-spacing: 2px; }
