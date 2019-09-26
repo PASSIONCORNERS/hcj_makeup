@@ -1,0 +1,141 @@
+.tests {
+  background-color: #f8f8f8;
+  h1 {
+    padding-top: 5em;
+    text-align: center;
+    font-family: $fontM;
+    font-size: 2.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+.tests-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tests-block {
+  //   margin-top: 2em;
+  text-align: center;
+  width: 30%;
+
+  h2 {
+    font-family: $fontM;
+    font-size: 4rem;
+  }
+  p {
+    margin: 3em 0;
+    font-family: $fontN;
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    color: #535353;
+  }
+  h4 {
+    // padding-bottom: 12em;
+    font-family: $fontM;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  .tests-last {
+    padding-bottom: 12em;
+  }
+}
+// Media Query Mixins
+@include atiphone6 {
+}
+
+@include at576 {
+}
+@include at768 {
+  .tests-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .tests-block {
+    margin-top: 4em;
+    text-align: center;
+    width: 30%;
+    h2 {
+      font-family: $fontM;
+      font-size: 4rem;
+    }
+    p {
+      margin: 3em 0;
+      font-family: $fontN;
+      font-style: italic;
+      line-height: 1.5;
+      font-size: 1.1rem;
+      color: #535353;
+    }
+    h4 {
+      padding-bottom: 12em;
+      font-family: $fontM;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+  }
+}
+@include at992 {
+  .tests-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .tests-block {
+    margin-top: 4em;
+    text-align: center;
+    width: 30%;
+    h2 {
+      font-family: $fontM;
+      font-size: 4rem;
+    }
+    p {
+      margin: 3em 0;
+      font-family: $fontN;
+      font-style: italic;
+      line-height: 1.5;
+      font-size: 1.1rem;
+      color: #535353;
+    }
+    h4 {
+      padding-bottom: 12em;
+      font-family: $fontM;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+  }
+}
+@include at1200 {
+  .tests-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .tests-block {
+    margin-top: 4em;
+    text-align: center;
+    width: 30%;
+    h2 {
+      font-family: $fontM;
+      font-size: 4rem;
+    }
+    p {
+      margin: 3em 0;
+      font-family: $fontN;
+      font-style: italic;
+      line-height: 1.5;
+      font-size: 1.1rem;
+      color: #535353;
+    }
+    h4 {
+      padding-bottom: 12em;
+      font-family: $fontM;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+  }
+}

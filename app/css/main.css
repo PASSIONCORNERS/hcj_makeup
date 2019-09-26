@@ -894,3 +894,115 @@ nav {
 
 .prices-price {
   float: right; }
+
+.tests {
+  background-color: #f8f8f8; }
+  .tests h1 {
+    padding-top: 5em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.tests-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.tests-block {
+  text-align: center;
+  width: 30%; }
+  .tests-block h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem; }
+  .tests-block p {
+    margin: 3em 0;
+    font-family: "Neuton", serif;
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    color: #535353; }
+  .tests-block h4 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem; }
+  .tests-block .tests-last {
+    padding-bottom: 12em; }
+
+@media (min-width: 768px) {
+  .tests-container {
+    flex-direction: row;
+    justify-content: space-between; }
+  .tests-block {
+    margin-top: 4em;
+    text-align: center;
+    width: 30%; }
+    .tests-block h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 4rem; }
+    .tests-block p {
+      margin: 3em 0;
+      font-family: "Neuton", serif;
+      font-style: italic;
+      line-height: 1.5;
+      font-size: 1.1rem;
+      color: #535353; }
+    .tests-block h4 {
+      padding-bottom: 12em;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      font-size: 0.9rem; } }
+
+@media (min-width: 992px) {
+  .tests-container {
+    flex-direction: row;
+    justify-content: space-between; }
+  .tests-block {
+    margin-top: 4em;
+    text-align: center;
+    width: 30%; }
+    .tests-block h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 4rem; }
+    .tests-block p {
+      margin: 3em 0;
+      font-family: "Neuton", serif;
+      font-style: italic;
+      line-height: 1.5;
+      font-size: 1.1rem;
+      color: #535353; }
+    .tests-block h4 {
+      padding-bottom: 12em;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      font-size: 0.9rem; } }
+
+@media (min-width: 1200px) {
+  .tests-container {
+    flex-direction: row;
+    justify-content: space-between; }
+  .tests-block {
+    margin-top: 4em;
+    text-align: center;
+    width: 30%; }
+    .tests-block h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 4rem; }
+    .tests-block p {
+      margin: 3em 0;
+      font-family: "Neuton", serif;
+      font-style: italic;
+      line-height: 1.5;
+      font-size: 1.1rem;
+      color: #535353; }
+    .tests-block h4 {
+      padding-bottom: 12em;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      font-size: 0.9rem; } }
