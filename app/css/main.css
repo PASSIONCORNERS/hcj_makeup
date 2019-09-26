@@ -334,7 +334,8 @@ nav {
     text-transform: uppercase;
     letter-spacing: 2px; }
   .portfolio p {
-    margin: 0.6em 0 3em 0;
+    margin: 0.6em 0 0 0;
+    padding-bottom: 3em;
     font-family: "Neuton", serif;
     font-style: italic;
     line-height: 1.5;
@@ -735,3 +736,86 @@ nav {
       grid-column: 5/9; }
     .portfolio-container .portfolio-gallery6 {
       grid-column: 9/13; } }
+
+.about-bg {
+  background-image: url("../img/about-bg.jpg");
+  height: auto;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.about-content h1 {
+  padding-top: 4em;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.about-content p {
+  text-align: center;
+  margin: 0.6em 0 0 0;
+  padding-bottom: 3em;
+  font-family: "Neuton", serif;
+  font-style: italic;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #535353; }
+
+.about-container {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 8em; }
+  .about-container img {
+    width: 100%; }
+  .about-container .about-content-left {
+    width: 100%; }
+    .about-container .about-content-left h3 {
+      text-align: center;
+      font-family: "Neuton", serif;
+      font-style: italic;
+      font-size: 1rem;
+      font-weight: 100;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 2em; }
+  .about-container .about-content-right {
+    width: 100%; }
+
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row; }
+    .about-container .about-content-left {
+      width: 45%; }
+      .about-container .about-content-left h3 {
+        text-align: center; }
+    .about-container .about-content-right {
+      width: 50%; } }
+
+@media (min-width: 992px) {
+  .about-container {
+    flex-direction: row; }
+    .about-container .about-content-left {
+      width: 45%; }
+      .about-container .about-content-left h3 {
+        text-align: center; }
+    .about-container .about-content-right {
+      width: 50%; } }
+
+@media (min-width: 1200px) {
+  .about-container {
+    flex-direction: row; }
+    .about-container .about-content-left {
+      width: 45%; }
+      .about-container .about-content-left h3 {
+        text-align: center; }
+    .about-container .about-content-right {
+      width: 50%; } }

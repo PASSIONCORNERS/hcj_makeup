@@ -1,0 +1,108 @@
+.about-bg {
+  background-image: url("../img/about-bg.jpg");
+  height: auto;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.about-content {
+  h1 {
+    padding-top: 4em;
+    text-align: center;
+    font-family: $fontM;
+    font-size: 2.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  p {
+    text-align: center;
+    margin: 0.6em 0 0 0;
+    padding-bottom: 3em;
+    font-family: $fontN;
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    color: #535353;
+  }
+}
+.about-container {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 8em;
+  img {
+    width: 100%;
+  }
+  .about-content-left {
+    width: 100%;
+    h3 {
+      text-align: center;
+      font-family: $fontN;
+      font-style: italic;
+      font-size: 1rem;
+      font-weight: 100;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 2em;
+    }
+  }
+  .about-content-right {
+    width: 100%;
+  }
+}
+// Media Query Mixins
+
+@include atiphone6 {
+}
+
+@include at576 {
+}
+@include at768 {
+  .about-container {
+    flex-direction: row;
+    .about-content-left {
+      width: 45%;
+      h3 {
+        text-align: center;
+      }
+    }
+    .about-content-right {
+      width: 50%;
+    }
+  }
+}
+@include at992 {
+  .about-container {
+    flex-direction: row;
+    .about-content-left {
+      width: 45%;
+      h3 {
+        text-align: center;
+      }
+    }
+    .about-content-right {
+      width: 50%;
+    }
+  }
+}
+@include at1200 {
+  .about-container {
+    flex-direction: row;
+    .about-content-left {
+      width: 45%;
+      h3 {
+        text-align: center;
+      }
+    }
+    .about-content-right {
+      width: 50%;
+    }
+  }
+}
