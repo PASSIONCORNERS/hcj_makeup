@@ -819,3 +819,78 @@ nav {
         text-align: center; }
     .about-container .about-content-right {
       width: 50%; } }
+
+.prices {
+  background-color: #fff;
+  height: 100vh;
+  position: relative; }
+
+.prices-box {
+  max-width: 1000px;
+  width: 90%;
+  height: 75vh;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  width: 100%;
+  transform: translate(-50%, -50%); }
+
+.prices-box-content {
+  width: 100%;
+  height: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  transform: translateY(-50%); }
+  .prices-box-content h1 {
+    color: #fff;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+  .prices-box-content ul {
+    padding-top: 7em;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 80%;
+    margin: 0 auto; }
+  .prices-box-content li {
+    margin: 15px 0 15px 0;
+    position: relative; }
+  .prices-box-content li::before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dashed #585858;
+    z-index: 9; }
+  .prices-box-content span {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 10;
+    background-color: #000; }
+  .prices-box-content p {
+    padding-top: 7em;
+    font-family: "Neuton", serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    cursor: pointer; }
+
+.prices-service {
+  float: left; }
+
+.prices-price {
+  float: right; }

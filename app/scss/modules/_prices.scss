@@ -1,0 +1,132 @@
+.prices {
+  background-color: #fff;
+  height: 100vh;
+  position: relative;
+}
+.prices-box {
+  max-width: 1000px;
+  width: 90%;
+  height: 75vh;
+  background-color: #000;
+  color: #fff;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.prices-box-content {
+  width: 100%;
+  height: 60vh;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  transform: translateY(-50%);
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-family: $fontM;
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  ul {
+    padding-top: 7em;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+  li {
+    margin: 15px 0 15px 0;
+    position: relative;
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dashed #585858;
+    z-index: 9;
+  }
+  span {
+    text-align: center;
+    font-family: $fontM;
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 10;
+    background-color: #000;
+  }
+  p {
+    padding-top: 7em;
+    font-family: $fontN;
+    font-size: 1.2rem;
+    font-style: italic;
+    cursor: pointer;
+  }
+}
+// .prices-box {
+//   max-width: 900px;
+//   width: 90%;
+//   margin: 0 auto;
+//   height: 80vh;
+//   background-color: #000;
+//   border: 1px solid blue;
+//   color: #fff;
+//   position: relative;
+// }
+// .prices-box-content {
+//   height: 50vh;
+//   position: absolute;
+//   top: 50%;
+//   left: 0;
+//   text-align: center;
+//   width: 100%;
+//   transform: translateY(-50%);
+//   padding: 0 3em;
+
+//   h1 {
+//     color: #fff;
+//     padding-top: 2em;
+//     text-align: center;
+//     font-family: $fontM;
+//     font-size: 2.2rem;
+//     font-weight: 100;
+//     text-transform: uppercase;
+//     letter-spacing: 2px;
+//   }
+//   ul {
+//     display: flex;
+//     flex-direction: column;
+//     list-style: none;
+//     width: 90%;
+//     margin: 0 auto;
+//   }
+//   li {
+//     margin: 15px 0 15px 0;
+//   }
+//   span {
+//     text-align: center;
+//     font-family: $fontM;
+//     font-size: 1.1rem;
+//     font-weight: 100;
+//     text-transform: uppercase;
+//     letter-spacing: 2px;
+//   }
+// }
+.prices-service {
+  float: left;
+}
+.prices-price {
+  float: right;
+}
